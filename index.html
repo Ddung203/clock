@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      href="https://firebasestorage.googleapis.com/v0/b/upload-imgs-52a0d.appspot.com/o/images%2Flogo-D-noBGC.png?alt=media&token=c3bdc90f-29c9-4eea-9a63-0b979d14fb48"
+      type="image/png"
+    />
+    <title>Đồng Hồ Đếm Ngược</title>
+    <link
+      rel="stylesheet"
+      href="./style.css"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="wrapper">
+        <div class="">
+          <label for="timeInput">Số phút: </label>
+          <input
+            type="number"
+            name="timeInput"
+            id="timeInput"
+            value="20"
+            placeholder="Nhập số phút..."
+          />
+        </div>
+
+        <div class="container">
+          <h1>Đồng Hồ Đếm Ngược</h1>
+          <div id="countdown">20:00</div>
+          <button id="startButton">Bắt đầu</button>
+          <button id="resetButton">Đặt lại</button>
+        </div>
+      </div>
+    </div>
+    <audio
+      id="alertSound"
+      src="alert.mp3"
+    ></audio>
+    <script src="./index.js"></script>
+  </body>
+</html>
